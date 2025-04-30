@@ -94,6 +94,11 @@ function Ox.GetPlayers(filter) end
 function Ox.GetVehicle(entityId) end
 
 ---**`server`**
+---@param entityId number
+---@return OxVehicleServer
+function Ox.GetVehicleFromEntity(entityId) end
+
+---**`server`**
 ---@param netId number
 ---@return OxVehicleServer
 function Ox.GetVehicleFromNetId(netId) end
