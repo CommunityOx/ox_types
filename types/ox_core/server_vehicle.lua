@@ -1,15 +1,15 @@
 ---@meta
 
 ---@class OxVehicleServer
----@field public entity number
+---@field public entity? number
 ---@field public make string
 ---@field public model string
----@field public netId number
+---@field public netId? number
 ---@field public plate string
 ---@field public group? string
 ---@field public id? number
 ---@field public owner? number
----@field public vin? string
+---@field public vin string
 vehicle = {}
 
 ---**`server`**
