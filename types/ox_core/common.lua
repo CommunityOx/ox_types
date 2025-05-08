@@ -6,6 +6,11 @@
 Ox = {}
 
 ---**`common`**
+---@param name string
+---@return OxGroup
+function Ox.GetGroup(name) end
+
+---**`common`**
 ---@param groupName string
 ---@return OxGroupPermissions
 function Ox.GetGroupPermissions(groupName) end
@@ -88,7 +93,7 @@ local VehicleClasses = {
 ---@field type VehicleTypes;
 ---@field weapons? true;
 
----@alias OxAccountRole  'viewer' | 'contributor' | 'manager' | 'owner'
+---@alias OxAccountRole 'viewer' | 'contributor' | 'manager' | 'owner'
 
 ---@class OxAccount
 ---@field id number
@@ -102,10 +107,12 @@ local VehicleClasses = {
 ---@class OxGroup
 ---@field name string
 ---@field label string
----@field grades {label: string, accountRole: OxAccountRole}[]
+---@field grades string[]
+---@field accountRoles table<string, OxAccountRole>
 ---@field type string?
 ---@field colour number?
 ---@field hasAccount boolean
+---@field principal string?
 
 ---@class OxPlayer
 ---@field public userId number

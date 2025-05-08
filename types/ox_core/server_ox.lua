@@ -1,5 +1,13 @@
 ---@meta
 
+---@class OxCreateGroupProperties
+---@field name string
+---@field label string
+---@field grades {label: string, accountRole?: OxAccountRole}[]
+---@field type string?
+---@field colour number?
+---@field hasAccount boolean?
+
 ---@class OxServer
 Ox = {}
 
@@ -10,7 +18,7 @@ Ox = {}
 function Ox.CreateAccount(ownerId, label) end
 
 ---**`server`**
----@param data OxGroup
+---@param data OxCreateGroupProperties
 function Ox.CreateGroup(data) end
 
 ---**`server`**
@@ -62,11 +70,6 @@ function Ox.GetGroupAccount(groupName) end
 ---@param groupType string
 ---@return string[]
 function Ox.GetGroupsByType(groupType) end
-
----**`server`**
----@param name string
----@return OxGroup
-function Ox.GetGroup(name) end
 
 ---**`server`**
 ---@param playerId number
