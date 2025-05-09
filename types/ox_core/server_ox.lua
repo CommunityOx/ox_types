@@ -131,6 +131,16 @@ function Ox.SaveAllVehicles() end
 function Ox.SetGroupPermission(groupName, grade, permission, value) end
 
 ---**`server`**
+---@param groupName string
+---@return number[]
+function Ox.GetGroupActivePlayers(groupName) end
+
+---**`server`**
+---@param groupType string
+---@return number[]
+function Ox.GetGroupActivePlayersByType(groupType) end
+
+---**`server`**
 ---@param dbId number
 ---@param coords vector3
 ---@param heading? number
