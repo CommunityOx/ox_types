@@ -4,7 +4,7 @@ Consolidated types for [Lua Language Server](https://github.com/LuaLS/lua-langua
 
 ## Usage (VS Code)
 
-- Install [cfxlua-vscode](https://marketplace.visualstudio.com/items?itemName=communityox.cfxlua-vscode).
+- Install [CfxLua IntelliSense](https://marketplace.visualstudio.com/items?itemName=communityox.cfxlua-vscode-cox).
 - Clone this repository.
 - Open your settings (for the user, workspace, or folder).
   - You can also use a ".luarc.json" file.
