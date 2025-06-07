@@ -87,6 +87,11 @@ function Ox.GetPlayerFromFilter(filter) end
 function Ox.GetPlayerFromUserId(userId) end
 
 ---**`server`**
+---@param charId number
+---@return OxPlayerServer
+function Ox.GetPlayerFromCharId(charId) end
+
+---**`server`**
 ---@param filter? table<string, any>
 ---@return OxPlayerServer[]
 function Ox.GetPlayers(filter) end
