@@ -97,9 +97,9 @@ function Ox.GetPlayerFromCharId(charId) end
 function Ox.GetPlayers(filter) end
 
 ---**`server`**
----@param entityId number
+---@param handle string|number `vin` or `entityId`
 ---@return OxVehicleServer
-function Ox.GetVehicle(entityId) end
+function Ox.GetVehicle(handle) end
 
 ---**`server`**
 ---@param entityId number
