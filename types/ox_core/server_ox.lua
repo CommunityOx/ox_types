@@ -107,6 +107,11 @@ function Ox.GetVehicle(handle) end
 function Ox.GetVehicleFromEntity(entityId) end
 
 ---**`server`**
+---@param filter? table<string, any>
+---@return OxVehicleServer
+function Ox.GetVehicleFromFilter(filter) end
+
+---**`server`**
 ---@param netId number
 ---@return OxVehicleServer
 function Ox.GetVehicleFromNetId(netId) end
@@ -115,6 +120,11 @@ function Ox.GetVehicleFromNetId(netId) end
 ---@param vin string
 ---@return OxVehicleServer
 function Ox.GetVehicleFromVin(vin) end
+
+---**`server`**
+---@param filter? table<string, any>
+---@return OxVehicleServer[]
+function Ox.GetVehicles(filter) end
 
 ---**`server`**
 ---@param groupName string
