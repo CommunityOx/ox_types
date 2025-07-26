@@ -38,8 +38,9 @@ function Ox.DeleteAccountInvoice(invoiceId) end
 function Ox.DeleteGroup(groupName) end
 
 ---**`server`**
+---@param pattern? string
 ---@return string
-function Ox.GenerateVehiclePlate() end
+function Ox.GenerateVehiclePlate(pattern) end
 
 ---**`server`**
 ---@param modelName string
