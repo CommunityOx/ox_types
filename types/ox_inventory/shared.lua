@@ -71,14 +71,15 @@ exports.ox_inventory = {}
 ---@class OxClientProps
 ---@field status? table<string, number>
 ---@field anim? string | { dict?: string, clip: string, flag?: number, blendIn?: number, blendOut?: number, duration?: number, playbackRate?: number, lockX?: boolean, lockY?: boolean, lockZ?: boolean, scenario?: string, playEnter?: boolean }
----@field prop? string | ProgressPropProps
+---@field prop? string | ProgressPropProps | ProgressPropProps[]
 ---@field usetime? number
 ---@field label? string
 ---@field useWhileDead? boolean
----@field canCancel? boolean
+---@field cancel? boolean
 ---@field disable? { move?: boolean, car?: boolean, combat?: boolean, mouse?: boolean }
 ---@field export? string
 ---@field component? number[]
+---@field notification? string
 ---@field [string] any
 
 ---@class OxClientItem : OxItem
